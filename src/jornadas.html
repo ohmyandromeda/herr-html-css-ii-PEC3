@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es" class="bg-brand-bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" />
+    <title>Artusania - Jornadas</title>
+  </head>
+  <body
+    class="font-sans antialiased text-brand-primary bg-brand-bg min-h-screen flex flex-col"
+  >
+    <header
+      class="relative w-full h-[60vh] min-h-[400px] flex items-end overflow-hidden mb-8 rounded-xl shadow-lg"
+    >
+      <include src="./views/header.html"></include>
+      <img
+        src="./assets/images/plaza-arbol.jpg"
+        alt="Vistas de Altura"
+        class="absolute inset-0 w-full h-full object-cover brightness-[0.35]"
+      />
+
+      <div
+        class="relative z-10 w-full p-6 md:p-12 space-y-4 bg-gradient-to-t from-black/5 to-transparent"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-black text-brand-title uppercase tracking-tight leading-tight drop-shadow-md"
+        >
+          Artsanía de Altura: El Palpitar de la Creación en Septiembre
+        </h1>
+        <p
+          class="text-base md:text-xl font-medium text-white/90 italic leading-relaxed max-w-4xl"
+        >
+          Las Jornadas de Artesanía de Altura 2026 transformarán la Plaza de la
+          Cueva Santa del 12 al 14 de septiembre en un hervidero de talento
+          tradicional y contemporáneo.
+        </p>
+      </div>
+    </header>
+    <main class="grow w-full max-w-4xl mx-auto px-4 py-8 md:py-16">
+      <article class="space-y-8">
+        <section class="prose max-w-none">
+          <nav aria-label="breadcrumb" class="mb-8">
+            <ol class="flex flex-wrap items-center gap-2 text-sm">
+              <li><a href="index.html" class="breadcrumb-link">Inicio</a></li>
+              <li class="text-brand-secondary/60">/</li>
+              <li><a href="" class="breadcrumb-link">Lo último</a></li>
+              <li class="text-brand-secondary/60">/</li>
+              <li class="text-brand-primary font-semibold" aria-current="page">
+                Jornadas 2026
+              </li>
+            </ol>
+          </nav>
+
+          <p class="article-p">
+            El próximo 12 de septiembre arranca un evento único que busca
+            fusionar la identidad del Alto Palancia con las nuevas corrientes
+            del diseño. Durante tres días, vecinos y visitantes podrán disfrutar
+            de una programación gratuita que incluye música, gastronomía y,
+            sobre todo, mucho oficio.
+          </p>
+
+          <blockquote
+            class="border-l-4 border-brand-title pl-4 italic text-brand-primary/90 my-6 text-lg bg-brand-secondary/10 py-3 pr-2 rounded-r"
+          >
+            "Queremos que estas jornadas sean un puente entre las manos que
+            conocen la tradición y las mentes que imaginan el futuro de la
+            artesanía", señalan desde la organización.
+          </blockquote>
+
+          <figure class="my-8 space-y-2">
+            <img
+              src="./assets/images/plaza-arbol.jpg"
+              alt="Plaza de la Cueva Santa en Altura"
+              class="w-full h-auto rounded-lg shadow-md object-cover max-h-112.5"
+            />
+            <figcaption
+              class="text-sm text-center text-brand-primary/70 italic"
+            >
+              La histórica Plaza de la Cueva Santa acogerá los talleres
+              centrales de las jornadas.
+            </figcaption>
+          </figure>
+          <p class="article-p">
+            Uno de los puntos fuertes del fin de semana serán los talleres en
+            vivo. La ceramista
+            <strong class="font-bold text-brand-title">Tanya Sush</strong>
+            (Tatsu Cerámica) ofrecerá una demostración magistral de la técnica
+            Rakú, mientras que el dúo formado por
+            <strong class="font-bold text-brand-title">Ale e Isa</strong> (BICO
+            joyería) guiará a los asistentes en la creación de piezas únicas.
+            Estas actividades buscan fomentar la colaboración ciudadana bajo el
+            lema del evento: "Colabora".
+          </p>
+
+          <div class="my-8">
+            <img
+              src="./assets/images/tatsu-ceramica.jpeg"
+              alt="Taller de joyería cerámica"
+              class="w-full h-auto rounded-lg shadow-md object-cover max-h-100"
+            />
+          </div>
+
+          <p class="article-p">
+            La programación se divide en bloques de mañana y tarde para asegurar
+            que toda la familia encuentre su lugar. Mientras los adultos
+            participan en degustaciones de productos locales, los más pequeños
+            podrán acercarse al arte de la mano de la ilustradora
+            <strong class="font-bold text-brand-title">Andrea Esteve</strong>
+            (Oh my andromeda), quien coordinará los talleres de dibujo y
+            creatividad en la plaza.
+          </p>
+
+          <h3 class="article-heading-3">Lo más destacado del fin de semana:</h3>
+
+          <ul
+            class="space-y-3 mb-8 pl-5 list-disc list-inside text-brand-primary/90"
+          >
+            <li>
+              <strong class="text-brand-primary font-bold">Mañana:</strong>
+              Bienvenida institucional y talleres de joyería cerámica con BICO.
+            </li>
+            <li>
+              <strong class="text-brand-primary font-bold">Tarde:</strong>
+              Demostraciones de Rakú a cargo de Tatsu Cerámica y dibujo en vivo
+              con Andrea Esteve.
+            </li>
+            <li>
+              <strong class="text-brand-primary font-bold">Clausura:</strong>
+              Música local y clausura de las jornadas el domingo 14 de
+              septiembre.
+            </li>
+          </ul>
+
+          <include src="./views/info-evento.html"></include>
+        </section>
+      </article>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
