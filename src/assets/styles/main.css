@@ -1,1 +1,15 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.article-p {
+  @apply text-base text-brand-primary/90 leading-relaxed mb-6;
+}
+
+.article-heading-3 {
+  @apply text-xl font-bold text-brand-primary mt-8 mb-4 tracking-tight;
+}
+
+.breadcrumb-link {
+  @apply text-brand-secondary hover:text-brand-title transition-colors;
+}
