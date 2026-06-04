@@ -1,37 +1,93 @@
 <!doctype html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Artusania - Inicio</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+  <body
+    class="bg-brand-bg font-sans antialiased text-brand-primary min-h-screen flex flex-col"
+  >
+    <main
+      class="flex-grow flex items-center justify-center px-6 py-12 md:py-24"
+    >
+      <div class="max-w-4xl w-full text-center space-y-12">
+        <div class="space-y-4">
+          <div class="space-y-6">
+          <div class="flex justify-center">
+            <img 
+              src="./assets/images/logo-artusania.png" 
+              alt="Logo Artusania" 
+              class="h-16 md:h-20 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h1
+            class="text-4xl md:text-6xl font-black text-brand-primary uppercase tracking-tight leading-none"
+          >
+            Jornadas de Artesanía de Altura 2026
+          </h1>
+          <p
+            class="text-base md:text-lg text-brand-primary/80 max-w-xl mx-auto leading-relaxed"
+          >
+            Te esperamos en la Plaza de la Cueva Santa del 12 al 14 de septiembre
+          </p>
+        </div>
+
+        <hr class="border-brand-secondary/20 max-w-xs mx-auto" />
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left"
+        >
+          <a
+            href="jornadas.html"
+            class="flex flex-col p-6 bg-white border border-brand-secondary/20 rounded-xl shadow-sm hover:shadow-md hover:border-brand-title/40 transition-all duration-300 group"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span
+                class="text-xs font-bold text-brand-title uppercase tracking-wider"
+                >Noticias</span
+              >
+              <span
+                class="text-brand-secondary group-hover:text-brand-title transition-colors"
+              >
+                <i class="fa-solid fa-arrow-right-long text-lg"></i>
+              </span>
+            </div>
+            <h2
+              class="text-xl font-bold text-brand-primary group-hover:text-brand-title transition-colors mb-2"
+            >
+              Contenido de las jornadas de Artusania en Altura (Castellón)
+            </h2>
+          </a>
+
+          <a
+            href="speakers.html"
+            class="flex flex-col p-6 bg-white border border-brand-secondary/20 rounded-xl shadow-sm hover:shadow-md hover:border-brand-title/40 transition-all duration-300 group"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span
+                class="text-xs font-bold text-brand-title uppercase tracking-wider"
+                >Sobre el evento</span
+              >
+              <span
+                class="text-brand-secondary group-hover:text-brand-title transition-colors"
+              >
+                <i class="fa-solid fa-arrow-right-long text-lg"></i>
+              </span>
+            </div>
+            <h2
+              class="text-xl font-bold text-brand-primary group-hover:text-brand-title transition-colors mb-2"
+            >
+              Ponentes del Evento
+            </h2>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <include src="./views/copyright.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
   </body>
 </html>
