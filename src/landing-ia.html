@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking contest 2024 edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-white text-gray-900 antialiased">
+    <header
+      class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between"
+    >
+      <div class="text-lg font-bold tracking-tight">
+        Cooking contest 2024 edition
+      </div>
+      <nav class="flex items-center space-x-8 text-sm font-semibold">
+        <a href="#" class="hover:text-gray-600">Home</a>
+        <a href="#" class="hover:text-gray-600">The contest</a>
+        <a href="#" class="hover:text-gray-600">Recipes</a>
+        <a
+          href="#"
+          class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+          >Contestants</a
+        >
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 mt-16 mb-24">
+      <section class="text-center mb-12">
+        <h1 class="text-5xl font-bold tracking-tight mb-4">Contestants</h1>
+        <p class="text-gray-500 text-lg">
+          This section describes the recipes of the best contestants
+        </p>
+      </section>
+
+      <section class="mb-20">
+        <div class="w-full overflow-hidden rounded-xl shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80"
+            alt="Contestants sharing food at a table"
+            class="w-full h-[500px] object-cover"
+          />
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-3xl font-bold tracking-tight mb-2">The recipes</h2>
+        <p class="text-gray-500 text-base">
+          These are the recipes of the best contestants
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+        <div
+          class="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[220px]"
+        >
+          <div>
+            <h3 class="font-bold text-lg mb-4 text-black">
+              Cajun seafood pasta
+            </h3>
+          </div>
+          <div class="flex items-center space-x-3 mt-auto">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+              alt="John Cooper"
+            />
+            <div>
+              <h4 class="text-sm font-bold text-black">John Cooper</h4>
+              <p class="text-xs text-gray-500 leading-relaxed mt-0.5">
+                This Cajun seafood pasta recipe is a hot one, but delicious!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[220px]"
+        >
+          <div>
+            <h3 class="font-bold text-lg mb-4 text-black">
+              Cedar planked salmon
+            </h3>
+          </div>
+          <div class="flex items-center space-x-3 mt-auto">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+              alt="Marta Alonso"
+            />
+            <div>
+              <h4 class="text-sm font-bold text-black">Marta Alonso</h4>
+              <p class="text-xs text-gray-500 leading-relaxed mt-0.5">
+                Salmon reaches its full potential when it's grilled on top of a
+                cedar plank.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[220px]"
+        >
+          <div>
+            <h3 class="font-bold text-lg mb-4 text-black">
+              Poulet au vinaigre
+            </h3>
+          </div>
+          <div class="flex items-center space-x-3 mt-auto">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+              alt="Mary Ann Stones"
+            />
+            <div>
+              <h4 class="text-sm font-bold text-black">Mary Ann Stones</h4>
+              <p class="text-xs text-gray-500 leading-relaxed mt-0.5">
+                Irresistible chicken, cooked with vinegar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-gray-200 mb-12" />
+
+      <footer class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+        <div
+          class="flex flex-col justify-between h-full space-y-6 md:space-y-0"
+        >
+          <span class="font-bold text-base text-black"
+            >Cooking contest 2024 edition</span
+          >
+
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-gray-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-600">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="font-bold text-black mb-3">Recipes</h5>
+          <ul class="space-y-2 text-xs font-medium text-gray-900">
+            <li><a href="#" class="hover:underline">Cajun seafood pasta</a></li>
+            <li>
+              <a href="#" class="hover:underline">Cedar planked salmon</a>
+            </li>
+            <li><a href="#" class="hover:underline">Poulet au vinaigre</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-bold text-black mb-3">Contestants</h5>
+          <ul class="space-y-2 text-xs font-medium text-gray-900">
+            <li><a href="#" class="hover:underline">John Cooper</a></li>
+            <li><a href="#" class="hover:underline">Marta Alonso</a></li>
+            <li><a href="#" class="hover:underline">Mary Ann Stones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-bold text-black mb-3">Contest editions</h5>
+          <ul class="space-y-2 text-xs font-medium text-gray-900">
+            <li><a href="#" class="hover:underline">2024</a></li>
+            <li><a href="#" class="hover:underline">2023</a></li>
+            <li><a href="#" class="hover:underline">2022</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
